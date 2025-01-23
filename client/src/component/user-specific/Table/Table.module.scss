@@ -1,0 +1,49 @@
+.wrapper {
+    width: 100%;
+    overflow-y: auto;
+}
+
+
+table, th, td {
+    margin: 0;     
+}
+
+table {
+    background-color: #FAFAFA;
+    width: 100%;
+    // height: 10%;
+    border-radius: 11px;
+    overflow: hidden;
+    border-collapse: separate;  
+    text-align: left;
+    border: 1px solid #DEDEDE;
+    border-spacing: 0;
+}
+
+th {
+    font-family: 'Satoshi-Medium';
+}
+
+th, td {
+    padding: 20px;
+}
+
+td {
+    background-color: #FFFFFF;
+    border-top: 1px solid #DEDEDE;
+}
+
+
+.link {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 1021px) {
+    
+    table tr td:last-child {
+        padding: 0;
+    }
+
+}

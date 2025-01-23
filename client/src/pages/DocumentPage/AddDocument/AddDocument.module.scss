@@ -1,0 +1,15 @@
+.add_document_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    height: calc(100vh - 180px);
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .add_document_grid {
+        grid-template-columns: 1fr;
+    }
+}

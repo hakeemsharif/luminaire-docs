@@ -1,0 +1,65 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    height: calc(100vh - 180px);
+
+    .settings {
+        padding: 20px;
+        border: 1px solid #DEDEDE;
+        border-radius: 11px;
+
+        h2 {
+            margin: 0;
+        }
+
+        form {
+
+            label {
+                font-family: 'Satoshi-Bold';
+                margin-top: 20px;
+                font-size: 14px;
+            }
+    
+            input {
+                width: calc(100% - 22px);
+                height: 25px;
+                border: 1px solid #C3C3C3;
+                border-radius: 6px;
+                padding: 5px 10px 5px 10px ;
+                
+                &:focus {
+                    outline: none;
+                    border: 1px solid black;
+                }
+            }
+            
+            button {
+                border: none;
+                appearance: none;
+                font-family: 'Satoshi-Bold';
+                color: white;
+                margin-top: 25px;
+                padding: 10px;
+                width: 100%;
+                background: linear-gradient(225deg, #636363 0%, #292929 100%);
+                border-radius: 6px;
+            }
+        }
+
+        .future {
+            height: 100%;
+            display: block;
+            align-content: center;
+            text-align: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

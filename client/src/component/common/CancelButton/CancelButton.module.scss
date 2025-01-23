@@ -1,0 +1,22 @@
+.button {
+    background: white;
+    border-radius: 11px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-family: 'Satoshi-Bold';
+    margin: 0;
+    border: 1px solid;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    img {
+        max-width: 20px;
+        margin-right: 10px;
+    }
+}

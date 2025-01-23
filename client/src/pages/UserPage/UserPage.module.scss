@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    height: calc(100vh - 290px);
+}
+
+@media screen and (max-width: 1400px) {
+    .grid {
+        grid-template-columns: 1fr;
+        
+    height: calc(100vh - 290px);
+    }    
+}

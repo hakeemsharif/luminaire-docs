@@ -1,0 +1,55 @@
+.link {
+    text-decoration: none; 
+}
+
+.form {
+    padding-right: 30px;
+}
+
+.label {
+    font-family: 'Satoshi-Bold';
+    font-size: 14px;
+}
+
+.input[type=text], .input[type=date], .input[type=file], select, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-family: 'Satoshi-Regular';
+    border: 1px solid #C3C3C3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    font-size: 14px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid black;
+    }
+    
+}
+
+select > option {
+    font-family: 'Satoshi-Regular';
+}
+
+.preview {
+    text-align: center;
+
+    h2 {
+        text-align: left;
+    }
+}
+
+.pdf_preview {
+    height: 100%;
+    max-height: 90%;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

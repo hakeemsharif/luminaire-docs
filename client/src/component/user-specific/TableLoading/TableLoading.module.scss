@@ -1,0 +1,59 @@
+$base-color: #ddd;
+$shine-color: #e8e8e8;
+$animation-duration: 1s;
+$avatar-offset: 10 + 16;
+
+@mixin background-gradient {
+  background-image: linear-gradient(90deg, $base-color 0px, $shine-color 40px, $base-color 80px);
+  background-size: 200%;
+}
+
+.wrapper {
+    width: 100%;
+    overflow-y: auto;
+}
+
+table, th, td {
+    margin: 0;     
+}
+
+table {
+    background-color: #FAFAFA;
+    width: 100%;
+    border-radius: 11px;
+    overflow: hidden;
+    border-collapse: separate;  
+    text-align: left;
+    border: 1px solid #DEDEDE;
+    border-spacing: 0;
+}
+
+th {
+    font-family: 'Satoshi-Medium';
+}
+
+th, td {
+    padding: 20px;
+}
+
+td {
+    background-color: #FFFFFF;
+    border-top: 1px solid #DEDEDE;
+}
+
+.line {
+    @include background-gradient;
+    animation: shine-lines $animation-duration infinite linear;
+    height: 20px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+@keyframes shine-lines {
+    0% {
+        background-position: 100% 0; 
+      }
+      100% {
+        background-position: -100% 0;
+      }
+  }

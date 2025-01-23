@@ -1,0 +1,20 @@
+.button {
+    background: linear-gradient(225deg, #636363 0%, #292929 100%);
+    border-radius: 11px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-family: 'Satoshi-Bold';
+    margin: 0;
+    border: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    img {
+        max-width: 20px;
+        margin-right: 10px;
+    }
+}
