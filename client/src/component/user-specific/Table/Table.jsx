@@ -46,7 +46,7 @@ export default function Table() {
                 <td>
                   <NavLink className={style.link} to={`/users/${user._id}`}><ViewButton/></NavLink> 
                   <NavLink className={style.link} to={`/users/update/${user._id}`}><UpdateButton/></NavLink> 
-                  <DeleteButton _id={user._id} url="http://localhost:5555/user" queryKey="user"/>
+                  <DeleteButton _id={user._id} url={import.meta.env.VITE_URL+"/document"} queryKey="user"/>
                   {/* <NavLink className={style.link} to={`/users/${user._id}`}><img src={ViewIcon} alt="View"/></NavLink>  */}
                   {/* <NavLink className={style.link} to={`/users/update/${user._id}`}><img src={EditIcon} alt="Edit"/></NavLink>  */}
                   {/* <NavLink className={style.link} onClick={() => handleDelete(user._id)}><img src={DeleteIcon} alt="Delete"/></NavLink> */}

@@ -41,7 +41,7 @@ export default function DocumentCard({ _id, title, author, category, file }) {
           <UpdateButton />
         </NavLink>
 
-        <DeleteButton _id={_id} url="http://localhost:5555/document" queryKey="documents"/>
+        <DeleteButton _id={_id} url={import.meta.env.VITE_URL+"/document"} queryKey="documents"/>
         {/* <button className={style.button}><img src={DeleteIcon} alt="" /></button> */}
       </div>
 
