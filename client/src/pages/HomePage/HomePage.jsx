@@ -1,6 +1,5 @@
 import style from "./HomePage.module.scss"
 import Header from "../../component/common/Header/Header"
-// import Placeholder from "../../assets/placeholder.png"
 import DocumentCard from "../../component/common/DocumentCard/DocumentCard"
 import CardLoading from "../../component/common/CardLoading/CardLoading";
 import CardError from "../../component/common/CardError/CardError";
@@ -52,24 +51,24 @@ export default function HomePage() {
         <div className={style.new_documents}>
           <h1>Recently Added</h1>
           
-        <div className={style.document_cards}>
-          {isPending ? (
-            <CardLoading />
-          ) : error ? (
-            <CardError />
-          ) : (
-            data.data
-            .slice(0,6)
-            .filter((document) => {
-              return search.toLowerCase() === ""
-                ? document
-                : document.title.toLowerCase().includes(search.toLowerCase());
-            })
-            .map((documents) => (
-              <DocumentCard key={documents._id} {...documents} />      
-            ))
-          )}
-        </div>
+          <div className={style.document_cards}>
+            {isPending ? (
+              <CardLoading />
+            ) : error ? (
+              <CardError />
+            ) : (
+              data.data
+              .slice(0,6)
+              .filter((document) => {
+                return search.toLowerCase() === ""
+                  ? document
+                  : document.title.toLowerCase().includes(search.toLowerCase());
+              })
+              .map((documents) => (
+                <DocumentCard key={documents._id} {...documents} />      
+              ))
+            )}
+          </div>
 
         </div>
     </main>

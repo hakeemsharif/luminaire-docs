@@ -9,7 +9,7 @@ import useDocumentUpdate from "../../../hooks/useDocumentUpdate";
 import useFetchDataId from "../../../hooks/useFetchDataId";
 import { useEffect } from "react";
 
-// NOTE: ON 17 JAN 25, I REMOVED (OR RATHER USED //) PASSWORD AND CONFIRM PASSWORD IN UPDATE. 
+// NOTE: ON 17 JAN 25, I REMOVED (OR RATHER COMMENTED OUT) THE 'PASSWORD' AND 'CONFIRM PASSWORD' FIELDS IN THE UPDATE. 
 // USER SHOULD BE THE ONE BE UPDATING THE PASSWORD. 
 // I'LL PROBABLY IMPLEMENT THAT FEATURE IN "SETTINGS"
 

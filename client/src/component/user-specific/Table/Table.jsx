@@ -17,10 +17,8 @@ export default function Table() {
 
   if (error) {
     return <span>Error: {error.message}</span>
-    // return <TableLoading />
   }
 
-  
   return (
     <div className={style.wrapper}>
       <table style={style.table}>
@@ -47,9 +45,6 @@ export default function Table() {
                   <NavLink className={style.link} to={`/users/${user._id}`}><ViewButton/></NavLink> 
                   <NavLink className={style.link} to={`/users/update/${user._id}`}><UpdateButton/></NavLink> 
                   <DeleteButton _id={user._id} url={import.meta.env.VITE_URL+"/user"} queryKey="user"/>
-                  {/* <NavLink className={style.link} to={`/users/${user._id}`}><img src={ViewIcon} alt="View"/></NavLink>  */}
-                  {/* <NavLink className={style.link} to={`/users/update/${user._id}`}><img src={EditIcon} alt="Edit"/></NavLink>  */}
-                  {/* <NavLink className={style.link} onClick={() => handleDelete(user._id)}><img src={DeleteIcon} alt="Delete"/></NavLink> */}
                 </td>
                 
               </tr>

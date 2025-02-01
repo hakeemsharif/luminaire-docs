@@ -44,10 +44,6 @@ export default function DocumentPage() {
                   className={style.document_card_wrapper}
                 >
                   <DocumentCard {...documents} />
-                  {/* <NavLink
-                className={style.link}
-                to={`/documents/${documents._id}`}
-              > */}
                 </div>
               ))
           )}

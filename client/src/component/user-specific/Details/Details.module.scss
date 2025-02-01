@@ -1,20 +1,16 @@
+// https://webspe.net/tools/en/border/
+
 .view {
     padding: 40px 0px;
     border-radius: 11px;
     display: block;
     align-content: center;
     text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
-    // https://webspe.net/tools/en/border/
     background-image: repeating-linear-gradient(90deg, #000000, #000000 20px, transparent 20px, transparent 35px), repeating-linear-gradient(180deg, #000000, #000000 20px, transparent 20px, transparent 35px), repeating-linear-gradient(90deg, #000000, #000000 20px, transparent 20px, transparent 35px), repeating-linear-gradient(180deg, #000000, #000000 20px, transparent 20px, transparent 35px);
     background-position: left top, right top, left bottom, left top;
     background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
     background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
- 
+
         
     img {
         width: 200px;

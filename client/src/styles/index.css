@@ -1,12 +1,5 @@
 :root {
   font-family: 'Satoshi-Regular';
-  /* line-height: 1.5; */
-  /* font-weight: 400; */
-
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,17 +14,12 @@
   display: grid;
   grid-template-columns: auto 4fr;
   height: 100vh;
-  /* grid-template-rows: 0.1fr 0.3fr 1fr; */
-  /* grid-template-areas: 
-      "navigation maindisplay" */
 }
 
 .navigation {
-  /* font-family: 'Inter', sans-serif; */
   padding: 30px;
   background: var(--primary);
   border: 1px solid var(--border);
-  /* height: 100%; */
 }
 
 .mobile-navigation {
@@ -48,7 +36,6 @@
 
 .main-display {
   padding: 30px;
-  /* font-family: 'Inter', sans-serif; */
   overflow: auto;
 }
 

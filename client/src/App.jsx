@@ -32,7 +32,7 @@ function App() {
   const { user } = useAuthContext()
 
   if (user === undefined) {
-    return <div>Loading...</div>; // Show a global loading spinner
+    return <div>Loading...</div>; // Show a global loading spinner (basic loading for now)
   }
   
   return (

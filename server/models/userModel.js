@@ -28,11 +28,6 @@ const userSchema = mongoose.Schema(
             required: true
         },
 
-        // confirmPassword: {
-        //     type: String,
-        //     required: true
-        // },
-
         role: {
             type: String,
             required: true
@@ -71,13 +66,13 @@ userSchema.statics.login = async function (email, password) {
     const user = await this.findOne({ email })
 
     if (!user) {
-        throw Error("Your username or password is incorrect") // Email
+        throw Error("Your username or password is incorrect") // Wrong Email
     }
 
     const match = await bcrypt.compare(password, user.password)
 
     if (!match) {
-        throw Error("Your username or password is incorrect") //Password
+        throw Error("Your username or password is incorrect") // Wrong Password
     }
 
     return user

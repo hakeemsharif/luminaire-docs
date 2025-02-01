@@ -24,7 +24,6 @@
     
     .document_cards {
         display: grid;
-        // grid-template-columns: repeat(8, 1fr);
         grid-template-columns: repeat(auto-fit, 200px);
         grid-gap: 20px;
         place-items: center;
@@ -76,7 +75,6 @@
 
 @media screen and (max-width: 817px) {
     .info_cards {
-        // grid-template-columns: repeat(1, 1fr);
         text-align: center;
 
         .card {

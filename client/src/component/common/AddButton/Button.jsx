@@ -10,8 +10,7 @@ export default function Button(props) {
   )
 }
 
-
 Button.propTypes = {
     name: PropTypes.string
-  };
+};
   

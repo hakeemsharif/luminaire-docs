@@ -10,7 +10,6 @@ export default function ViewButton() {
   )
 }
 
-
 ViewButton.propTypes = {
   _id: PropTypes.string,
 };
