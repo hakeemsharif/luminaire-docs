@@ -24,10 +24,10 @@ export default function LoginPage() {
             </div>
           )}
 
-          <label>Username</label>
+          <label>Email</label>
           <input
             type="text"
-            placeholder="Enter username"
+            placeholder="Enter email"
             onChange={(e) => setEmail(e.target.value)}
           />
           <label>Password</label>
