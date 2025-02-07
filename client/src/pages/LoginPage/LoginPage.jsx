@@ -38,7 +38,7 @@ export default function LoginPage() {
           />
 
           <button className={style.button} disabled={isLoading} type="submit">
-            Login
+            {isLoading ? "Logging In ": "Login" }
           </button>
 
 
